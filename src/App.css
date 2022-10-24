@@ -1,16 +1,118 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 20vmin;
   pointer-events: none;
 }
-
+.ha img{
+  width:100%;
+  height: 100%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dark-mode {
+	background-color: black;
+}
+
+.dark-mode h1 {
+	color: white;
+}
+
+.container {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+  background-image: black;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.note.new {
+	background-color: #c9cdcd;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: #9ca8a7;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	background-color: #c5c4c4;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+	background-color: #c9a8a8;
+	cursor: pointer;
+}
+
+.note {
+	background-color: #eaeaea;
+	border-radius: 0px;
+	padding: 2rem;
+	min-height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
 }
 
 .App-link {
@@ -28,6 +130,7 @@
 .navbar {
   background-color: #212224;
   padding: 30px;
+   text-align: center;
 }
 .mylink{
   padding: 10px;
@@ -44,3 +147,122 @@
   background-color: aquamarine;
   flex-direction: column;
   }
+  .bold {
+    font-weight: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+   
+
+
+.abs-left{
+  width: 100%;
+  background: #2a2929;
+  line-height: 50px;
+  height: 100%;
+}
+.abs-left .abs-profile {
+  min-height: 10px;
+  min-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.abs-left .abs-profile  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+ .abs-left .abs-content {
+  padding: 0 126px;
+}
+.text {
+  color:#d0cf91;
+}
+/* .abs .title {
+  margin-bottom: 20px;
+} */
+ .abs-left .bold{
+  color: #FFBE88;
+}
+.abs-item {
+  padding: 5px 0;
+  border-bottom: 2px solid #cccc;
+  text-align: justify;
+}
+ .abs-left .abs-item:last-child {
+  border-bottom: 0px;
+}
+ .abs-left  ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+ .abs-left ul li .icon {
+  width: 35px;
+  height: 35px;
+  color: #FFFF;
+  font-size:17px;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ .abs-left ul li .info {
+    color: aliceblue;
+    padding-top: 14px;
+    font-size: 15px;
+}
+ .abs-left .abs-skills ul li {
+    color: aliceblue;
+    justify-content: space-between;
+   
+}
+
+ .abs-left .abs-skills ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+ .abs-left .abs-skills .li_wrap {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #140303;
+}
+
+.abs-left .abs-skills.li_wrap{
+background: #fff;
+
+}
+
+ .abs-left .abs-skills .text
+{
+margin-top: 5px;
+}
+
+.abs-left .abs-skills .li_wrap{
+border: 2px solid #fff;
+}
+
+.abs-left .abs-skills .li_wrap .icon,
+.abs-left .abs-skills.li_wrap .text{
+color: #fff;
+padding-left: 10px;
+}
+
+.abs-left .abs-skills .li_wrap:hover{
+background: #fff;
+}
+
+.abs-left .abs-skills .li_wrap:hover .icon,
+.abs-left .abs-skills .li_wrap:hover .text{
+color: #c9c753;
+}
